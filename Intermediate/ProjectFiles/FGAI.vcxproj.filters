@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\FGAI.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{41FA63B7-84B1-48AA-9299-D9E67A3D515A}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\FGAI.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\FGAIEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\gitignore.txt" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{A8568C25-6E6F-4441-BDE8-80255519BEA4}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\FGAI">
+      <UniqueIdentifier>{2210929E-A28B-4B0F-A3F3-29EB5F68C6D8}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\FGAI\FGAI.Build.cs">
+      <Filter>Source\FGAI</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\FGAI\FGAI.cpp">
+      <Filter>Source\FGAI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FGAI\FGAI.h">
+      <Filter>Source\FGAI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FGAI\FGAIGameMode.cpp">
+      <Filter>Source\FGAI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FGAI\FGAIGameMode.h">
+      <Filter>Source\FGAI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FGAI\FGCharacter.cpp">
+      <Filter>Source\FGAI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FGAI\FGCharacter.h">
+      <Filter>Source\FGAI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FGAI\FGEnemy.cpp">
+      <Filter>Source\FGAI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FGAI\FGEnemy.h">
+      <Filter>Source\FGAI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FGAI\FGGameInstance.cpp">
+      <Filter>Source\FGAI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FGAI\FGGameInstance.h">
+      <Filter>Source\FGAI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FGAI\FGHearingSenseComponent.cpp">
+      <Filter>Source\FGAI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FGAI\FGHearingSenseComponent.h">
+      <Filter>Source\FGAI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FGAI\FGMovementStatics.cpp">
+      <Filter>Source\FGAI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FGAI\FGMovementStatics.h">
+      <Filter>Source\FGAI</Filter>
+    </ClInclude>
+    <Filter Include="Source\FGAI\AI">
+      <UniqueIdentifier>{E2F90180-E2BE-4B09-B306-75819938C739}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\FGAI\AI\Movement">
+      <UniqueIdentifier>{DBDBDA7E-AD09-40B4-9BB1-6F6334468308}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\FGAI\AI\Movement\FGNavMovementComponent.cpp">
+      <Filter>Source\FGAI\AI\Movement</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FGAI\AI\Movement\FGNavMovementComponent.h">
+      <Filter>Source\FGAI\AI\Movement</Filter>
+    </ClInclude>
+    <Filter Include="Source\FGAI\AI\Sensing">
+      <UniqueIdentifier>{0EC3E4EA-D794-43C8-85B4-C6DD77346E4D}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\FGAI\AI\Sensing\FGVisionSensingComponent.cpp">
+      <Filter>Source\FGAI\AI\Sensing</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FGAI\AI\Sensing\FGVisionSensingComponent.h">
+      <Filter>Source\FGAI\AI\Sensing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\FGAI\AI\Sensing\FGVisionSensingSettings.h">
+      <Filter>Source\FGAI\AI\Sensing</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FGAI\AI\Sensing\FGVisionSensingTargetComponent.cpp">
+      <Filter>Source\FGAI\AI\Sensing</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FGAI\AI\Sensing\FGVisionSensingTargetComponent.h">
+      <Filter>Source\FGAI\AI\Sensing</Filter>
+    </ClInclude>
+    <Filter Include="Source\FGAI\AI\StateMachine">
+      <UniqueIdentifier>{DD7001D3-2654-4B5C-822D-7C3EDCFFA455}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\FGAI\AI\StateMachine\FGAIStateBase.cpp">
+      <Filter>Source\FGAI\AI\StateMachine</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FGAI\AI\StateMachine\FGAIStateBase.h">
+      <Filter>Source\FGAI\AI\StateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\FGAI\AI\StateMachine\FGAIStateMachineSheet.h">
+      <Filter>Source\FGAI\AI\StateMachine</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FGAI\AI\StateMachine\FGStateMachineComponent.cpp">
+      <Filter>Source\FGAI\AI\StateMachine</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FGAI\AI\StateMachine\FGStateMachineComponent.h">
+      <Filter>Source\FGAI\AI\StateMachine</Filter>
+    </ClInclude>
+    <Filter Include="Source\FGAI\Components">
+      <UniqueIdentifier>{1D65652A-C3EA-439A-81A8-C1E71D0D0C93}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\FGAI\Components\FGMovementComponent.cpp">
+      <Filter>Source\FGAI\Components</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FGAI\Components\FGMovementComponent.h">
+      <Filter>Source\FGAI\Components</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

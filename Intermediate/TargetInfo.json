@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "FGAI",
+			"Path": "C:\\New Repo\\FGAI\\Source\\FGAI.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "FGAIEditor",
+			"Path": "C:\\New Repo\\FGAI\\Source\\FGAIEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
