@@ -107,10 +107,11 @@ void AFGCharacter::MakingNoise()
 	{
 		for (UFGHearingSenseComponent* Listener : Listeners)
 		{
-			Listener->HeardNoise(NoiseRadius);
-			
+			Listener->HeardNoise(NoiseRadius, this);
+
 		}
-		Timer = 0;
+		DrawDebugSphere(GetWorld(), GetActorLocation(), NoiseRadius, 12, FColor(181, 0, 0), true, 2, 0, 2);
+
 	}
 }
 

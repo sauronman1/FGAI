@@ -4,6 +4,8 @@
 #include "FGHearingSenseComponent.h"
 #include "FGGameInstance.h"
 #include "Kismet/GameplayStatics.h"
+#include "DrawDebugHelpers.h"
+#include "FGCharacter.h"
 
 
 // Sets default values for this component's properties
@@ -23,7 +25,8 @@ void UFGHearingSenseComponent::BeginPlay()
 	Super::BeginPlay();
 	Cast<UFGGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()))->HearingComponents.Add(this);
 	// ...
-	
+	DrawDebugSphere(GetWorld(), GetOwner()->GetActorLocation(), HearingDistance, 12, FColor(181, 0, 0), true, 20, 0, 2);
+
 }
 
 void UFGHearingSenseComponent::OnComponentDestroyed(bool bDestroyingHierarchy)
@@ -46,10 +49,14 @@ void UFGHearingSenseComponent::TickComponent(float DeltaTime, ELevelTick TickTyp
 	// ...
 }
 
-void UFGHearingSenseComponent::HeardNoise(float NoiseRadius)
+void UFGHearingSenseComponent::HeardNoise(float NoiseRadius, AFGCharacter* NoiseOriginCharacter)
 {
-	
-	UE_LOG(LogTemp, Warning, TEXT("We hear you"))
+	float DistanceToNoise = FVector::Dist(NoiseOriginCharacter->GetActorLocation(), GetOwner()->GetActorLocation());
+	if (FMath::Square(DistanceToNoise) < (FMath::Square(NoiseRadius) + FMath::Square(HearingDistance)))
+	{
+		UE_LOG(LogTemp, Warning, TEXT("We hear you"));
+		NoiseOriginCharacter->Timer = 0;
+	}
 }
 
 

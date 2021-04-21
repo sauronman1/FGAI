@@ -38,7 +38,7 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseLookUpRate;
 	float Timer;
-	float NoiseRadius;
+	float NoiseRadius = 200.f;
 
 	virtual void Tick(float DeltaTime) override;
 

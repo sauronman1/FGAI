@@ -7,6 +7,7 @@
 #include "FGHearingSenseComponent.generated.h"
 
 
+class AFGCharacter;
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class FGAI_API UFGHearingSenseComponent : public UActorComponent
 {
@@ -25,10 +26,10 @@ public:
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 	virtual void OnComponentDestroyed(bool bDestroyingHierarchy) override;
 	virtual void EndPlay(const EEndPlayReason::Type EndPlayReason) override;
-	void HeardNoise(float NoiseRadius);
+	void HeardNoise(float NoiseRadius, AFGCharacter* NoiseOriginCharacter);
 
 	UPROPERTY(EditDefaultsOnly)
-	float HearingDistance = 500.f;
+	float HearingDistance = 200.f;
 
 		
 };
