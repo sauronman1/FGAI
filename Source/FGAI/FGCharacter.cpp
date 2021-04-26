@@ -110,7 +110,7 @@ void AFGCharacter::MakingNoise()
 			Listener->HeardNoise(NoiseRadius, this);
 
 		}
-		DrawDebugSphere(GetWorld(), GetActorLocation(), NoiseRadius, 12, FColor(181, 0, 0), true, 2, 0, 2);
+		
 
 	}
 }
