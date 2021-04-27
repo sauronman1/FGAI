@@ -9,7 +9,7 @@
 
 class AFGCharacter;
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
-class FGAI_API UFGHearingSenseComponent : public UActorComponent
+class UFGHearingSenseComponent : public UActorComponent
 {
 	GENERATED_BODY()
 

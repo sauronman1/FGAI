@@ -8,7 +8,7 @@
 class UFGHearingSenseComponent;
 
 UCLASS()
-class FGAI_API UFGGameInstance : public UGameInstance
+class UFGGameInstance : public UGameInstance
 {
 	GENERATED_BODY()
 
