@@ -55,7 +55,8 @@ void UFGHearingSenseComponent::HeardNoise(float NoiseRadius, AFGCharacter* Noise
 	if (FMath::Square(DistanceToNoise) < (FMath::Square(NoiseRadius) + FMath::Square(HearingDistance)))
 	{
 		DrawDebugSphere(GetWorld(), NoiseOriginCharacter->GetActorLocation(), NoiseRadius, 12, FColor(181, 0, 0), true, 2, 0, 2);
-		UE_LOG(LogTemp, Warning, TEXT("We hear you"));
+		if (GEngine)
+			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("We HEar YoU"));
 		NoiseOriginCharacter->Timer = 0;
 	}
 }
